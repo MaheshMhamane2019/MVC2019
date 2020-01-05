@@ -5,11 +5,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WebApplication9.Models;
-
+using System.Data;
 namespace WebApplication9.Controllers
 {
     public class HomeController : Controller
     {
+        maheshEntities mdb = new maheshEntities();
         // GET: Home
         public ActionResult Index()
         {
@@ -17,8 +18,11 @@ namespace WebApplication9.Controllers
             {
                 "Pune","Mumbai","Klkata","Panhi","Pout","Sangola"
             };
-
-
+            Employee emp = new Employee();
+            emp.id = 1;
+            emp.Name = "ABS";
+           // mdb.tblStudents.Add(emp.id= 1, emp.Name="",emp.Gender="M",emp.Did=1);
+           // mdb.SaveChanges();
             return View();
         }
 
@@ -26,7 +30,7 @@ namespace WebApplication9.Controllers
 
         {
             Employee emp = new Employee();
-            emp.EmployeeId = 11;
+            emp.id = 11;
             emp.Name = "Mahesh";
             emp.Gender = "Male";
 
