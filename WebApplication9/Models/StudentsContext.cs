@@ -13,5 +13,6 @@ namespace WebApplication9.Models
     {
         public DbSet<Student> Students  { get; set; }
 
+
     }
 }
