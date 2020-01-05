@@ -9,13 +9,15 @@ namespace WebApplication9.Controllers
 {
     public class StudentController : Controller
     {
-        // GET: Student
-        public ActionResult Details(int ID)
+        //GET: Student
+        public ActionResult Details1(int ID)
         {
-            StudentsContext studentcontext = new StudentsContext();
-            Student std = studentcontext.Students.Single(std1 => std1.ID==ID);
+           
+                StudentsContext studentcontext = new StudentsContext();
+                Student std = studentcontext.Students.Single(std1 => std1.ID == ID);
 
-            return View(std);
+                return View(std);
+            
         }
     }
 }

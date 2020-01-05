@@ -12,6 +12,7 @@ namespace WebApplication9
     {
         protected void Application_Start()
         {
+            Database.SetInitializer<WebApplication9.Models.EmployeeContext>(null);
             Database.SetInitializer<WebApplication9.Models.StudentsContext>(null);
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
