@@ -1,0 +1,45 @@
+﻿@model WebApplication9.Models.Student
+
+@{
+    ViewBag.Title = "Student Details";
+}
+
+<h2>Employee Details</h2>
+
+<table style="font-family:Arial">
+    <tr>
+        <td>
+           Student ID:
+        </td>
+        <td>
+            @Model.ID
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Name:
+        </td>
+        <td>
+            @Model.Name
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Gender:
+        </td>
+        <td>
+            @Model.Gender
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Total Marks:
+        </td>
+        <td>
+            @Model.TotalMarks
+        </td>
+    </tr>
+</table>
+<h3>
+    @Html.ActionLink("BACK TO LIST","Index");
+</h3>
