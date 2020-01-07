@@ -39,7 +39,15 @@
             @Model.TotalMarks
         </td>
     </tr>
+    <tr>
+        <td>
+            DepartmentID:
+        </td>
+        <td>
+            @Model.DepartmentId
+        </td>
+    </tr>
 </table>
-<h3>
-    @Html.ActionLink("BACK TO LIST","Index");
-</h3>
+<h5>
+    @Html.ActionLink("BACK TO LIST","Details2",new { ID = @Model.DepartmentId});
+</h5>

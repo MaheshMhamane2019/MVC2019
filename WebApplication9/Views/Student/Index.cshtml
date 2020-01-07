@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WebApplication9.Models.Student>
+@using  WebApplication9.Models
+
+@{
+    ViewBag.Title = "Student List";
+}
+
+<div style="font-family:Arial">
+
+    <h2>Student List</h2>
+    <ul>
+        @foreach (Student Students in @Model)
+            {
+            <li> @Html.ActionLink(Students.Name,"Details1",new  {ID= Students.ID })</li>
+
+               }
+
+    </ul>
+
+    @Html.ActionLink("BACK TO Deparment", "Index", new { DepartmnetId = @Model});
+</div>
+
+
+

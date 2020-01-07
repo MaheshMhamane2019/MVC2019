@@ -12,6 +12,7 @@ namespace WebApplication9.Models
     public class StudentsContext: System.Data.Entity.DbContext
     {
         public DbSet<Student> Students  { get; set; }
+        public DbSet<Departmnet> Departmnets { get; set; }
 
 
     }

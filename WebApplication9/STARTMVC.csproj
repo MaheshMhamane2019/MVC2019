@@ -132,6 +132,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Departmnet.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\EmployeeContext .cs" />
     <Compile Include="Models\Student.cs" />
@@ -152,6 +153,10 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Student\Details1.cshtml" />
     <Content Include="Views\Employee\Details.cshtml" />
+    <Content Include="Views\Student\Index.cshtml" />
+    <Content Include="Views\Student\Dept.cshtml" />
+    <Content Include="Views\Student\StdList.cshtml" />
+    <Content Include="Views\Student\Details2.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

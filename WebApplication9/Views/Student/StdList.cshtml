@@ -1,0 +1,17 @@
+﻿@model IEnumerable<WebApplication9.Models.Student>
+@using WebApplication9.Models
+@{
+    ViewBag.Title = "StdList";
+}
+
+
+<div>
+    <h2>StdList</h2>
+    <ul>
+        @foreach (Student Students in @Model)
+        {
+            <li>@Html.ActionLink(Students.Name, "Details1")</li>
+
+        }
+    </ul>
+</div>

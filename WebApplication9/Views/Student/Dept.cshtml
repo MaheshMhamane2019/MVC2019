@@ -1,0 +1,20 @@
+﻿
+@using WebApplication9.Models
+
+@model IEnumerable<Departmnet>
+@{
+    ViewBag.Title = "Department";
+}
+
+<div style="font-family:Arial">
+    <h2>Department</h2>
+    <ul>
+        @foreach (Departmnet Departmnets in @Model)
+        {
+            <li>@Html.ActionLink(Departmnets.Name,"Details2","Student",new  { ID = Departmnets.ID },null)
+        </li>
+        }
+    </ul>
+</div>
+
+
